@@ -1,13 +1,137 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Recepte - Rīsi šokolādē</title>
+    <title>Recipe - Rice Chocolate</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="./scrolling-nav.css" rel="stylesheet">
 </head>
-<body>
-    <div>
-        Rīsi šokolādē
-    </div>
+
+<body id="page-top" itemscope itemtype="http://schema.org/Recipe">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Recipes</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">About the dish</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#ingredients">Ingredients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#cooking">Cooking</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-white">
+        <div class="container text-center">
+            <h1>Rice chocolate recipe</h1>
+            <p class="lead" itemprop="description">An easy to make completely fictional <span itemprop="recipeCategory">entree</span> dish</p>
+            <span itemscope itemtype="http://schema.org/CreativeWork">
+                <p itemprop="aggregateRating">4.8/5</p>
+            </span>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img itemprop="image" src="./img/image.jpeg" alt="Beautiful rice chocolate" />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h2>About the dish</h2>
+                </div>
+            </div>
+            <br />
+
+            <br />
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h4>
+                        Prep Time:
+                    </h4>
+                    <p itemprop="prepTime" content="PT15M">20 minutes</p>
+                    <h4>
+                        Cook time:
+                    </h4>
+                    <p itemprop="cookTime" content="PT1H">2 hours 20 minutes</p>
+                    <h4>
+                        Yield:
+                    </h4>
+                    <p itemprop="recipeYield">1 large bowl</p>
+                    <h4>Nutrition facts:</h4>
+                    <span itemprop="nutrition" itemscope itemtype="http://schema.org/NutritionInformation">
+                        <span itemprop="calories">1240 calories</span>,
+                        <span itemprop="fatContent">12 grams fat</span>
+                    </span>
+                </div>
+            </div>
+    </section>
+
+    <section id="ingredients" class="bg-light">
+        <div class="container">
+                <div class="row">
+            <div class="col-lg-8 mx-auto">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li itemprop="recipeIngredient">2 cups rice</li>
+                        <li itemprop="recipeIngredient">1200g chocolate</li>
+                        <li itemprop="recipeIngredient">2g baking powder</li>
+                        <li itemprop="recipeIngredient">10 table spoons powdered sugar</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cooking">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>How to prepare</h2>
+                    <br />
+                    <p class="lead" itemprop="recipeInstructions">Take a fictional wooden hammer and smash the fictional
+                        chocolate in many fictional little pieces, then put it on the stove to melt. Meanwhile start
+                        preparing your rice and let them cook for 12 minutes. When done pour your and your rice in a
+                        fictional bowl and stir vigorously. Let cool for 2 hours. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; TheGrikis 2019</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
